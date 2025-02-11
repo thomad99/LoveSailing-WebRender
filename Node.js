@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 const pool = new Pool({
-    connectionString: "postgresql://lovesailing_database_user:CPCKCP8PDpLAuypwT2tpyihCJxm44TLN@dpg-cul4lgan91rc73b39n90-a.oregon-postgres.render.com/lovesailing_database"
+    connectionString: "postgresql://sail1:5p2GYOeXinvhRvhfOjkK30zItFISFcxs@dpg-culanb8gph6c73d9jl50-a/sail_exks"
 });
 
 app.post("/add_url", async (req, res) => {
@@ -18,4 +18,4 @@ app.post("/add_url", async (req, res) => {
     }
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+app.listen(5432, () => console.log("Server running on port 5432"));
